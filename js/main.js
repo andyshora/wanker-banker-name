@@ -4,9 +4,6 @@ $(document).ready(function() {
 
   $('#generate-button').click(generate);
 
-
-
-
 });
 function generate() {
 
@@ -25,17 +22,22 @@ function generate() {
     wanker = wanker.substring(0, 30);
   }
 
-  console.log('generate');
+  var generatedName = getRandomName();
+  $('#bank-name').html(generatedName);
 
-  var val = getRandomName();
-  $('#bank-name').html(val);
+  var generatedDivision = getRandomDivision();
+  $('#bank-division').html(generatedDivision);
 
-  var val = getRandomDivision();
-  $('#bank-division').html(val);
+  var generatedTitle = getRandomTitle();
+  $('#job-title').html(generatedTitle);
 
   $('#person-name').html(wanker);
 
-  $('.card').show();
+  $('.card,.twitter-share-button').show();
+
+
+
+  $('#twitter-share-button').attr('href', 'https://twitter.com/share?text=' + encodeURIComponent(wanker + '. ' + generatedTitle + ', ' + generatedDivision + ' at ' + generatedName + '. What\'s your wanker banker name?'));
 
 }
 var candidates = [
@@ -104,7 +106,32 @@ var divisions = [
   'forex',
   'futures',
   'options'
-]
+];
+var titles = [
+  'Vice President',
+  'Senior Adviser',
+  'Team Leader',
+  'Legal Adviser',
+  'Senior Contracts Administrator',
+  'Compliance Coordinator',
+  'Junior Paralegal',
+  'Compliance Director',
+  'Contracts Manager',
+  'Chief Learning Officer',
+  'Risk Officer',
+  'Wealth Manager',
+  'High Wealth Manager',
+  'Contracts Specialist',
+  'Equations Manager',
+  'Life Trader',
+  'Filing Treasurer',
+  'Facilities Planner',
+  'Cock Smoother'
+];
+function getRandomTitle() {
+  var i = Math.floor(Math.random() * titles.length);
+  return titles[i];
+}
 function getRandomDivision() {
   var i = Math.floor(Math.random() * divisions.length);
   return divisions[i];

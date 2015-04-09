@@ -10,6 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   text-align: center;
 }
+a {
+  color: black;
+}
 @media (min-width: 500px) {
   body {
     font-size: 18px;
@@ -95,4 +98,8 @@ button {
   font-family: 'PT Serif', serif;
   cursor: pointer;
   outline: none;
+}
+
+.twitter-share-button {
+  display: none;
 }
