@@ -94,7 +94,7 @@ var candidates = [
   'Pinckney ',
   'Yarborough',
   'Hollingsworth',
-  'shagworth',
+  'Shagworth',
 ];
 var divisions = [
   'Mergers and Aquisitions',
