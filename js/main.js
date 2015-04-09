@@ -100,12 +100,12 @@ var divisions = [
   'Mergers and Aquisitions',
   'FX Trading',
   'Pensions',
-  'derivatives',
-  'commodites trading',
-  'merchant brokers',
-  'forex',
-  'futures',
-  'options'
+  'Derivatives',
+  'Commodites Trading',
+  'Merchant Brokers',
+  'Forex',
+  'Futures',
+  'Options'
 ];
 var titles = [
   'Vice President',
