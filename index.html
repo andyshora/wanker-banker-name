@@ -3,7 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Wanker Banker Name Generator</title>
+  <title>What's your Wanker Banker name?</title>
+  <meta property="og:title" content="What's your Wanker Banker name?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="http://www.wankerbanker.biz" />
+  <meta property="og:description" content="" />
+
   <link rel="stylesheet" href="css/main.css">
   <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 </head>
@@ -11,10 +17,10 @@
   <button id="generate-button">Generate</button>
   <div class="card">
     <!-- <div class="card__number">212 555 6342</div> -->
-    <h1 class="card__person-name">Person Name</h1>
+    <h1 class="card__person-name" id="person-name">Wanker Banker</h1>
     <h1 class="card__person-job">Vice President</h1>
     <h3 id="bank-name" class="card__bank-name"></h3>
-    <p class="card__bank-division">Mergers and Aquisitions</p>
+    <p id="bank-division" class="card__bank-division">Mergers and Aquisitions</p>
     <footer class="card__bank-address">
       338 Wanker Lane New York, N.Y. 100099 FAX 212 555 6390 TELEX 10 4534
     </footer>
